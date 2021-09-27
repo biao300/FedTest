@@ -6,7 +6,7 @@ function CardGrid() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        requestApi.get().then((res) => {
+        requestApi.get('/fed-test/items.json').then((res) => {
             setItems(res.data.items);
         });
     }, []);
