@@ -1,0 +1,72 @@
+.item {
+  color: #4a4a4a;
+  border: 1px solid #c3c3c3;
+  height: 300px;
+  font-family: "Open Sans";
+  text-align: left;
+  padding: 30px 10px 0;
+  margin: 12px 0;
+  position: relative;
+}
+.item.highlight {
+  color: #fff;
+  background-color: #00a99f;
+  background-image: linear-gradient(to bottom right, #00a99f, #00ac86);
+}
+.item__title {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+}
+.item__title.highlight {
+  color: #fff;
+}
+.item__title:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+.item__description {
+  font-size: 8px;
+  font-weight: 400;
+}
+.item__document {
+  font-size: 8px;
+  align-items: center;
+  color: #c3c3c3;
+  overflow: hidden;
+  position: absolute;
+  bottom: 20px;
+}
+.item__document img {
+  position: relative;
+  width: 14px;
+  height: auto;
+  left: -50px;
+  filter: drop-shadow(#c3c3c3 50px 0);
+}
+.item__arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+.item__arrow img {
+  position: relative;
+  padding: 10px;
+  width: 15px;
+  height: auto;
+  left: -50px;
+  filter: drop-shadow(#00a99f 50px 0);
+}
+.item__arrow.highlight {
+  background-color: #0e766f;
+}
+.item__arrow.highlight img {
+  filter: drop-shadow(#fff 50px 0);
+}
+
+/*# sourceMappingURL=CardGrid.css.map */

@@ -1,0 +1,81 @@
+$theme-color: rgb(0,169,159);
+$gray-color: rgb(195,195,195);
+$text-color: rgb(74,74,74);
+
+.item {
+    color: $text-color;
+    border: 1px solid $gray-color;
+    height: 300px;
+    font-family: 'Open Sans';
+    text-align: left;
+    padding: 30px 10px 0;
+    margin: 12px 0;
+    position: relative;
+
+    &.highlight {
+        color: #fff;
+        background-color: $theme-color;
+        background-image: linear-gradient(to bottom right, $theme-color, rgb(0,172,134));
+    }
+
+    &__title {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 700;
+        &.highlight {
+            color: #fff;
+        }
+    }
+
+    &__title:hover {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+
+    &__description {
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    &__document {
+        font-size : 8px;
+        align-items: center;
+        color: $gray-color;
+        overflow: hidden;
+        img {
+            position: relative;
+            width: 14px;
+            height: auto;
+            left: -50px;
+            filter: drop-shadow($gray-color 50px 0);
+        }
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &__arrow {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 35px;
+        height: 35px;
+        overflow: hidden;
+        img {
+            position: relative;
+            padding: 10px;
+            width: 15px;
+            height: auto;
+            left: -50px;
+            filter: drop-shadow($theme-color 50px 0);
+        }
+
+        &.highlight {
+            background-color: rgb(14,118,111);
+            img{
+                filter: drop-shadow(#fff 50px 0);
+            }
+        }
+    }
+}
